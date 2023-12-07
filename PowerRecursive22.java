@@ -9,13 +9,19 @@ public class PowerRecursive22 {
     }
 public static void main(String[] args) {
     Scanner input= new Scanner(System.in);
-    System.out.print("Input Base Number: ");
-    int base= input.nextInt();
-    System.out.print("Input Power Number: ");
+    System.out.print("Number: ");
+    int Num= input.nextInt();
+    System.out.print("Calculated Number: ");
+    int Number= input.nextInt();
+    System.out.print("Power Number: ");
     int power= input.nextInt();
 
-    System.out.println("result of "+base+" power "+power+" = "+
-                        calculatePower(base, power));
+    System.out.print(Number);
+    for(int i= 1;i<power; i++) {
+        System.out.print(" x " + Number);
+    }
+    System.out.print(" x 1 ");
+    System.out.print(" = "+ calculatePower(Number, power));
 }
 }
 
